@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilakiya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6e4d52ff5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onClick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onClick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h2>Welcome to my portfolio!</h2><br/>
+                <h1>I'm <span> Ilakiya </span>Seenivasagan,</h1>
+                <h3>a Front-End Web Developer</h3>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------------------------------about----------------------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ProPic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="summary">2+ years experienced React Developer with hands-on experience in designing & implementing highly-responsive
+                        UI components by deploying React and JavaScript concepts. Proficient in identifying,debugging and fixing the bugs
+                        in the existing codebase. Capable of continuous learning from senior developers while still nurturing junior
+                        developers. Eager to tackle more complex problems and continue to find ways to maximize user efficiency.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onClick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onClick="openTab('Experience')">Experience</p>
+                            <p class="tab-links" onClick="openTab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>ReactJS</span><br>Developing Web/App Interfaces</li>
+                                <li><span>JavaScript</span><br>Developing Web/App Interfaces</li>
+                                <li><span>HTML5</span><br>Structuring Web/App Interfaces</li>
+                                <li><span>CSS3</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li>
+                                    <p><span>IT Analyst - Front End Web Developer (2018-2023)</span><br/>
+                                    <i>TATA consultancy Services, Chennai</i></p>
+                                    <ul>
+                                        <li>Designed, developed and monitored software applications for website based on the client requirement by
+                                                complying to technical standards and coding best practices </li>
+                                        <li>Worked on modularizing and updating old code bases to new web using RESTful web services</li>
+                                        <li>Implemented web-based features using React JS and Java in back end</li>
+                                        <li>Provided release support and helped to maintain stable environment throughout the release process</li>
+                                        <li>Worked in Agile-driven environment,hence, provided efficient deliverables</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li>
+                                    <p><span>Bachelor of Engineering (Electronics and Communication)- 2014-2018 </span> <br><i>Easwari Engineering College,Chennai</i>
+                                        <br>CGPA: 8.2</p>
+                                </li>
+                                <li>
+                                    <p><span>Higher Secondary - 2012-2014</span> <br/>
+                                    <i>Noble Matric Higher Secondary School</i><br/>
+                                    Percentage: 95%</p>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------------------------------skills-------------------------------------------------- -->
+
+    <!-- <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+
+            </div>
+        </div>
+    </div> -->
+
+<!-- ---------------------------------------------portfolio-------------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/dashboard.png">
+                    <div class="layer">
+                        <h3>Dashboard</h3>
+                        <p>Displays all the basic details collectively on the webpage</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecom.webp">
+                    <div class="layer">
+                        <h3>Ecommerce Website</h3>
+                        <p>Buy and Sell goods at much ease and at your own convenience</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/expensecalci.webp">
+                    <div class="layer">
+                        <h3>Expense Calci</h3>
+                        <p>Record all your inflows and outflows and spend smartly</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+
+<!-- ---------------------------------------------------contact--------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>bilaki@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>012345678</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ilakiya-seenivasagan/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/ilakiyabalaa"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://github.com/ilakiya-seenivasagan"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="images/Ilakiya CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">
+                        Submit
+                        </button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> IlakiyaSeenivasagan</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents= document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+
+        var sideMenu = document.getElementById("sideMenu");
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMyyZUm5KG5sLc_eBmjlRm5Nc-i7Bcq_AOiQDSKFTyp7aclIXeZzUFspW7v-9015Yx/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){msg.innerHTML = ""},5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
